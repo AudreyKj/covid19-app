@@ -7,5 +7,5 @@ archive reminding us of this very strange time.
 <br /> <br />
 FEATURES: submit form & browse section picking random submissions <br />
 Technologies: HTML, CSS, JavaScript, Node with Express.js, PostgreSQL <br />
-Libraries: React <br />
-Tested with React Testing Library + Jest
+Test: React Testing Library + Jest <br />
+Framework: React 
