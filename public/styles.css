@@ -3,535 +3,571 @@
 @import url("https://fonts.googleapis.com/css2?family=Codystar:wght@300;400&display=swap");
 
 * {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 html {
-  cursor: none;
+    cursor: none;
 }
 
 body {
-  background: lightgrey;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 300;
-  color: #444;
-  margin-left: 30px;
-  overflow: hidden;
+    background: lightgrey;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    color: #444;
+    margin-left: 30px;
+    overflow: hidden;
 }
 
 @media only screen and (max-width: 760px) {
-  body {
-    margin-left: 15px;
-  }
+    body {
+        margin-left: 15px;
+    }
 }
 
 div.cursor {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  box-shadow: white 0px 0px 3px 3px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    box-shadow: white 0px 0px 3px 3px;
 
-  position: absolute;
-  z-index: 100;
+    position: absolute;
+    z-index: 100;
 
-  pointer-events: none;
+    pointer-events: none;
 }
 
 span.instructions {
-  font-style: italic;
-  font-size: 1.5rem;
+    font-style: italic;
+    font-size: 1.5rem;
 }
 
 @media only screen and (max-width: 880px) {
-  span.instructions {
-    font-size: 1.2rem;
-  }
+    span.instructions {
+        font-size: 1.2rem;
+    }
 }
 
 @media only screen and (max-width: 760px) {
-  span.instructions {
-    font-size: 1rem;
-  }
+    span.instructions {
+        font-size: 1rem;
+    }
 }
 
 @media only screen and (max-width: 630px) {
-  span.instructions {
-    display: block;
-  }
+    span.instructions {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 490px) {
+    span.instructions {
+        display: none;
+    }
 }
 
 @media only screen and (max-height: 400px) {
-  span.instructions {
-    display: none;
-  }
+    span.instructions {
+        display: none;
+    }
 }
 
 div.ticker {
-  position: absolute;
-  top: 3rem;
-  width: 100%;
-  line-height: 1;
-  z-index: 5;
+    position: absolute;
+    top: 3rem;
+    width: 100%;
+    line-height: 1;
+    z-index: 5;
 }
 
 @media only screen and (max-height: 720px) {
-  div.ticker {
-    top: 3.4rem;
-  }
+    div.ticker {
+        top: 3.4rem;
+    }
 }
 
 @media only screen and (max-width: 630px) {
-  div.ticker {
-    top: 3.2rem;
-  }
+    div.ticker {
+        top: 4.3rem;
+    }
+}
+
+@media only screen and (max-height: 550px) and (max-width: 500px) {
+    div.ticker {
+        top: 4.5rem;
+    }
 }
 
 @media only screen and (max-height: 400px) {
-  div.ticker {
-    top: 1.2rem;
-  }
-}
-
-@media only screen and (max-height: 400px) and (max-width: 500px) {
-  div.ticker {
-    top: 2rem;
-  }
+    div.ticker {
+        top: 1.8rem;
+    }
 }
 
 h1 {
-  font-size: 10vh;
-  font-family: "Codystar", cursive;
-  text-shadow: 0 0 0.1em #fff, 0 0 0.15em #fff, 0 0 0.2em #fff, 0 0 0.25em #fff,
-    0 0 0.3em #fff, 0 0 0.3em #fff, 0 0 0.3em #fff;
-  margin-top: 0;
-  margin-bottom: 0;
-  top: 10px;
-  color: white;
+    font-size: 10vh;
+    font-family: "Codystar", cursive;
+    text-shadow: 0 0 0.1em #fff, 0 0 0.15em #fff, 0 0 0.2em #fff,
+        0 0 0.25em #fff, 0 0 0.3em #fff, 0 0 0.3em #fff, 0 0 0.3em #fff;
+    margin-top: 0;
+    margin-bottom: 0;
+    top: 10px;
+    color: white;
 
-  animation: moveRight 60s linear infinite;
-  white-space: nowrap;
-  position: relative;
-  display: block;
+    animation: moveRight 60s linear infinite;
+    white-space: nowrap;
+    position: relative;
+    display: block;
 }
 
 @media only screen and (max-width: 900px) {
-  h1 {
-    font-size: 9vh;
-  }
+    h1 {
+        font-size: 9vh;
+    }
 }
 
 @media only screen and (max-width: 700px) {
-  h1 {
-    font-size: 7vh;
-  }
+    h1 {
+        font-size: 7vh;
+    }
 }
 
 @keyframes moveRight {
-  0% {
-    transform: translateX(0);
-  }
+    0% {
+        transform: translateX(0);
+    }
 
-  100% {
-    transform: translateX(-100vw);
-  }
+    100% {
+        transform: translateX(-100vw);
+    }
 }
 
 @-webkit-keyframes moveRight {
-  0% {
-    transform: translateY(0);
-  }
+    0% {
+        transform: translateY(0);
+    }
 
-  100% {
-    transform: translateX(-100vw);
-  }
+    100% {
+        transform: translateX(-100vw);
+    }
 }
 
 nav {
-  position: absolute;
-  top: 10px;
-  font-size: 1.5rem;
+    position: absolute;
+    top: 10px;
+    font-size: 1.5rem;
 }
 
 @media only screen and (max-width: 760px) {
-  nav {
-    font-size: 1.2rem;
-  }
+    nav {
+        font-size: 1.2rem;
+    }
 }
 
 a {
-  cursor: none;
-  color: #444;
+    cursor: none;
+    color: #444;
 }
 
 a:hover {
-  color: white;
+    color: white;
 }
 
 .active {
-  color: white;
+    color: white;
 }
 
 /* SUBMIT */
 div.submit {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10%;
 }
 
 @media only screen and (max-width: 800px) {
-  div.submit {
-    margin-top: 15%;
-  }
+    div.submit {
+        margin-top: 15%;
+    }
 }
 
 @media only screen and (max-width: 500px) and (max-height: 350px) {
-  div.submit {
-    margin-top: 4%;
-  }
+    div.submit {
+        margin-top: 4%;
+    }
 }
 
 form.submit {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-  z-index: 1;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    z-index: 1;
 }
 
 @media only screen and (max-width: 1020px) {
-  form.submit {
-    width: 80%;
-  }
+    form.submit {
+        width: 80%;
+    }
 }
 
 @media only screen and (max-width: 910px) {
-  form.submit {
-    width: 90%;
-  }
+    form.submit {
+        width: 90%;
+    }
 }
 
 textarea.emotion {
-  background-color: transparent;
-  border: none;
-  margin-top: 70px;
-  width: 90%;
-  height: 200px;
-  font-size: 1.8rem;
-  border: none;
-  outline: none;
+    background-color: transparent;
+    border: none;
+    margin-top: 70px;
+    width: 90%;
+    height: 200px;
+    font-size: 1.8rem;
+    border: none;
+    outline: none;
 }
 
 @media only screen and (max-width: 700px) {
-  textarea.emotion {
-    font-size: 1.5rem;
-  }
+    textarea.emotion {
+        font-size: 1.5rem;
+    }
 }
 
 @media only screen and (max-width: 500px) and (max-height: 560px) {
-  textarea.emotion {
-    font-size: 1rem;
-    height: 100px;
-  }
+    textarea.emotion {
+        font-size: 1rem;
+        height: 100px;
+    }
 }
 
 input.country {
-  background-color: lightgrey;
-  border: none;
-  width: 100%;
-  font-size: 1.8rem;
-  outline: none;
+    background-color: lightgrey;
+    border: none;
+    width: 100%;
+    font-size: 1.8rem;
+    outline: none;
 }
 
 @media only screen and (max-width: 700px) {
-  input.country {
-    font-size: 1.5rem;
-  }
+    input.country {
+        font-size: 1.5rem;
+    }
 }
 
 @media only screen and (max-width: 500px) and (max-height: 560px) {
-  input.country {
-    font-size: 1rem;
-  }
+    input.country {
+        font-size: 1rem;
+    }
 }
 
 span.thankyou {
-  color: green;
-  font-size: 1.5rem;
-  z-index: 1;
+    color: green;
+    font-size: 1.5rem;
+    z-index: 1;
 }
 
 @media only screen and (max-width: 500px) and (max-height: 650px) {
-  span.thankyou {
-    font-size: 1rem;
-  }
+    span.thankyou {
+        font-size: 1rem;
+    }
 }
 
 @media only screen and (max-width: 500px) and (max-height: 340px) {
-  span.thankyou {
-    font-size: 0.8rem;
-  }
+    span.thankyou {
+        font-size: 0.8rem;
+    }
 }
 
 span.error {
-  color: red;
-  font-style: italic;
-  font-size: 1.5rem;
-  z-index: 1;
+    color: red;
+    font-style: italic;
+    font-size: 1.5rem;
+    z-index: 1;
 }
 
 @media only screen and (max-width: 500px) and (max-height: 650px) {
-  span.error {
-    font-size: 1rem;
-  }
+    span.error {
+        font-size: 1rem;
+    }
 }
 
 @media only screen and (max-width: 500px) and (max-height: 340px) {
-  span.error {
-    font-size: 0.8rem;
-  }
+    span.error {
+        font-size: 0.8rem;
+    }
 }
 
 button {
-  padding: 0.6em 2em;
-  margin-top: 40px;
-  margin-bottom: 20px;
+    padding: 0.6em 2em;
+    margin-top: 40px;
+    margin-bottom: 20px;
 
-  background-color: white;
-  border: none;
-  outline: none;
-  border-radius: 2px;
-  font-size: 2rem;
-  cursor: none;
+    background-color: white;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    font-size: 2rem;
+    cursor: none;
 }
 
 @media only screen and (max-width: 700px) {
-  button {
-    font-size: 1.8rem;
-  }
+    button {
+        font-size: 1.8rem;
+    }
 }
 
 @media only screen and (max-width: 500px) and (max-height: 500px) {
-  button {
-    font-size: 1rem;
-    padding: 0.4em 1em;
-    margin-top: 20px;
-    margin-bottom: 5px;
-  }
+    button {
+        font-size: 1rem;
+        padding: 0.4em 1em;
+        margin-top: 20px;
+        margin-bottom: 5px;
+    }
 }
 
 button:hover {
-  background-color: green;
-  color: white;
+    background-color: green;
+    color: white;
 }
 
 /* BROWSE */
 div.emotion-block {
-  border-radius: 12px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  height: 300px;
-  width: 100%;
+    border-radius: 12px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    height: 300px;
+    width: 100%;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 @media only screen and (max-width: 970px) {
-  div.emotion-block {
-    height: 400px;
-  }
+    div.emotion-block {
+        height: 400px;
+    }
 }
 
 @media only screen and (max-width: 500px) and (max-height: 650px) {
-  div.emotion-block {
-    height: 350px;
-  }
+    div.emotion-block {
+        height: 350px;
+    }
 }
 
 @media only screen and (max-height: 740px) and (max-width: 500px) {
-  div.emotion-block {
-    height: 400px;
-  }
+    div.emotion-block {
+        height: 400px;
+    }
 }
 
 @media only screen and (max-height: 560px) and (max-width: 500px) {
-  div.emotion-block {
-    height: 200px;
-  }
+    div.emotion-block {
+        height: 200px;
+    }
 }
 
 @media only screen and (max-height: 370px) {
-  div.emotion-block {
-    height: 190px;
-  }
+    div.emotion-block {
+        height: 190px;
+    }
 }
 
+/* div.randomEmotion-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+} */
+
 div.randomEmotion {
-  position: absolute;
-  left: 50%;
-  font-size: 2rem;
+    position: absolute;
+    left: 50%;
+    font-size: 2rem;
 
-  transform: translate(-50%, 50%);
-  width: 65%;
+    transform: translate(-50%, 50%);
+    width: 65%;
 
-  text-align: center;
-  word-wrap: break-word;
+    text-align: center;
+    word-wrap: break-word;
 }
 
 @media only screen and (max-width: 1180px) {
-  div.randomEmotion {
-    width: 75%;
-  }
+    div.randomEmotion {
+        width: 75%;
+    }
 }
 
 @media only screen and (max-width: 970px) {
-  div.randomEmotion {
-    width: 90%;
-    transform: translate(-50%, 37%);
-  }
+    div.randomEmotion {
+        width: 90%;
+        transform: translate(-50%, 37%);
+    }
 }
 
 @media only screen and (max-width: 750px) {
-  div.randomEmotion {
-    font-size: 1.9rem;
-  }
+    div.randomEmotion {
+        font-size: 1.9rem;
+    }
 }
 
 @media only screen and (max-height: 730px) and (max-width: 590px) {
-  div.randomEmotion {
-    transform: translate(-50%, 30%);
-    font-size: 1rem;
-  }
+    div.randomEmotion {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-height: 680px) and (max-width: 500px) {
+    div.randomEmotion {
+        transform: translate(-50%, 30%);
+    }
 }
 
 @media only screen and (max-height: 560px) and (max-width: 500px) {
-  div.randomEmotion {
-    transform: translate(-50%, 50%);
-  }
+    div.randomEmotion {
+        transform: translate(-50%, 80%);
+    }
 }
 
-@media only screen and (max-height: 460px) and (max-width: 500px) {
-  div.randomEmotion {
-    transform: translate(-50%, 50%);
-  }
+/* @media only screen and (max-height: 460px) and (max-width: 500px) {
+    div.randomEmotion {
+        transform: translate(-50%, 50%);
+    }
+} */
+
+@media only screen and (max-height: 500px) and (max-width: 500px) {
+    div.randomEmotion {
+        transform: translate(-50%, 57%);
+    }
 }
 
 @media only screen and (max-height: 400px) and (max-width: 500px) {
-  div.randomEmotion {
-    transform: translate(-50%, 38%);
-  }
-}
-
-@media only screen and (max-height: 330px) and (max-width: 500px) {
-  div.randomEmotion {
-    transform: translate(-50%, 25%);
-  }
+    div.randomEmotion {
+        transform: translate(-50%, 33%);
+    }
 }
 
 span.country {
-  font-size: 1rem;
-  font-style: italic;
-  padding-top: 20px;
-  padding-bottom: 20px;
+    font-size: 1rem;
+    font-style: italic;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 @media only screen and (max-width: 600px) {
-  span.country {
-    font-size: 0.8rem;
-  }
+    span.country {
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-height: 400px) {
+    span.country {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
 }
 
 span.date {
-  font-size: 1rem;
-  font-style: italic;
+    font-size: 1rem;
+    font-style: italic;
 }
 
 @media only screen and (max-width: 600px) {
-  span.date {
-    font-size: 0.8rem;
-  }
+    span.date {
+        font-size: 0.8rem;
+    }
 }
 
 div.next {
-  font-size: 3.5rem;
-  cursor: none;
+    font-size: 3.5rem;
+    cursor: none;
 
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 
-  opacity: 0.9;
+    opacity: 0.9;
 }
 
 @media only screen and (max-height: 650px) and (max-width: 500px) {
-  div.next {
-    margin-top: -90px;
-  }
+    div.next {
+        margin-top: -90px;
+    }
 }
 
 @media only screen and (max-height: 560px) and (max-width: 500px) {
-  div.next {
-    margin-top: -35px;
-    font-size: 2rem;
-  }
+    div.next {
+        margin-top: -35px;
+        font-size: 2rem;
+    }
 }
 
 @media only screen and (max-height: 400px) and (max-width: 500px) {
-  div.next {
-    margin-top: -30px;
-  }
+    div.next {
+        margin-top: -30px;
+    }
+}
+
+@media only screen and (max-height: 330px) {
+    div.next {
+        margin-top: -40px;
+    }
 }
 
 span.next-arrow:hover {
-  color: white;
+    color: white;
 }
 
 /* INFO */
 div.info {
-  top: 11%;
-  left: 50%;
-  transform: translate(-50%, 11%);
-  position: absolute;
-  width: 50%;
+    top: 11%;
+    left: 50%;
+    transform: translate(-50%, 11%);
+    position: absolute;
+    width: 50%;
 }
 
 @media only screen and (max-width: 1200px) {
-  div.info {
-    width: 60%;
-  }
+    div.info {
+        width: 60%;
+    }
 }
 
 @media only screen and (max-width: 950px) {
-  div.info {
-    width: 70%;
-  }
+    div.info {
+        width: 70%;
+    }
 }
 
 p.info_text {
-  font-size: 1.5rem;
-  margin-top: 70px;
+    font-size: 1.5rem;
+    margin-top: 70px;
 }
 
 @media only screen and (max-width: 950px) {
-  p.info_text {
-    font-size: 1.3rem;
-  }
+    p.info_text {
+        font-size: 1.3rem;
+    }
 }
 
 @media only screen and (max-width: 600px) {
-  p.info_text {
-    font-size: 1rem;
-  }
+    p.info_text {
+        font-size: 1rem;
+    }
 }
 
 @media only screen and (max-width: 500px) and (max-height: 640px) {
-  p.info_text {
-    margin-top: 30px;
-    font-size: 0.8rem;
-  }
+    p.info_text {
+        margin-top: 30px;
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-height: 300px) {
+    p.info_text {
+        font-size: 0.7rem;
+    }
 }
