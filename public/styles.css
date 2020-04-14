@@ -38,6 +38,12 @@ div.cursor {
     pointer-events: none;
 }
 
+/* @media only screen and (max-width: 700px) {
+    div.cursor {
+        display: none;
+    }
+} */
+
 span.instructions {
     font-style: italic;
     font-size: 1.5rem;
