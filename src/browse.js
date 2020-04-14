@@ -58,7 +58,7 @@ export default function Browse() {
             setRandomEmotion(result);
 
             const colorPalette = [
-                "rgba(255	115	115, 0.7)",
+                "rgba(255,	115,	115, 0.7)",
                 "rgba(219,145,169, 0.7)",
                 "rgba(160,212,216, 0.9)",
                 "rgba(102,205,170, 0.7)",
