@@ -11,18 +11,28 @@ html {
     cursor: none;
 }
 
+@media only screen and (max-width: 700px) {
+    html {
+        cursor: auto;
+    }
+}
+
 body {
     background: lightgrey;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 300;
     color: #444;
-    margin-left: 30px;
-    overflow: hidden;
+
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: fixed;
+    width: 100%;
+    height: 100%;
 }
 
 @media only screen and (max-width: 760px) {
     body {
-        margin-left: 15px;
+        margin-left: 0;
     }
 }
 
@@ -38,11 +48,11 @@ div.cursor {
     pointer-events: none;
 }
 
-/* @media only screen and (max-width: 700px) {
+@media only screen and (max-width: 700px) {
     div.cursor {
         display: none;
     }
-} */
+}
 
 span.instructions {
     font-style: italic;
@@ -163,6 +173,7 @@ nav {
     position: absolute;
     top: 10px;
     font-size: 1.5rem;
+    margin-left: 15px;
 }
 
 @media only screen and (max-width: 760px) {
@@ -192,9 +203,21 @@ div.submit {
     margin-top: 10%;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1030px) {
     div.submit {
-        margin-top: 15%;
+        margin-top: 20%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    div.submit {
+        margin-top: 30%;
+    }
+}
+
+@media only screen and (max-width: 600px) and (max-height: 740px) {
+    div.submit {
+        margin-top: 20%;
     }
 }
 
@@ -271,6 +294,7 @@ span.thankyou {
     color: green;
     font-size: 1.5rem;
     z-index: 1;
+    text-align: center;
 }
 
 @media only screen and (max-width: 500px) and (max-height: 650px) {
@@ -290,6 +314,7 @@ span.error {
     font-style: italic;
     font-size: 1.5rem;
     z-index: 1;
+    text-align: center;
 }
 
 @media only screen and (max-width: 500px) and (max-height: 650px) {
@@ -398,6 +423,12 @@ div.randomEmotion {
     word-wrap: break-word;
 }
 
+@media only screen and (max-width: 1030px) {
+    div.randomEmotion {
+        transform: translate(-50%, 65%);
+    }
+}
+
 @media only screen and (max-width: 1180px) {
     div.randomEmotion {
         width: 75%;
@@ -407,17 +438,18 @@ div.randomEmotion {
 @media only screen and (max-width: 970px) {
     div.randomEmotion {
         width: 90%;
-        transform: translate(-50%, 37%);
+        transform: translate(-50%, 40%);
     }
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 770px) {
     div.randomEmotion {
         font-size: 1.9rem;
+        transform: translate(-50%, 45%);
     }
 }
 
-@media only screen and (max-height: 730px) and (max-width: 590px) {
+@media only screen and (max-height: 850px) and (max-width: 590px) {
     div.randomEmotion {
         font-size: 1rem;
     }
@@ -434,12 +466,6 @@ div.randomEmotion {
         transform: translate(-50%, 80%);
     }
 }
-
-/* @media only screen and (max-height: 460px) and (max-width: 500px) {
-    div.randomEmotion {
-        transform: translate(-50%, 50%);
-    }
-} */
 
 @media only screen and (max-height: 500px) and (max-width: 500px) {
     div.randomEmotion {
@@ -567,13 +593,13 @@ p.info_text {
 
 @media only screen and (max-width: 500px) and (max-height: 640px) {
     p.info_text {
-        margin-top: 30px;
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
 }
 
-@media only screen and (max-height: 300px) {
+@media only screen and (max-height: 390px) {
     p.info_text {
         font-size: 0.7rem;
+        margin-top: 30px;
     }
 }
