@@ -13,7 +13,7 @@ export default class App extends React.Component {
     componentDidMount() {
         //ticker
         const title = "&nbsp;&nbsp;CORONA EMOTIONS CLUB&nbsp;&nbsp;";
-        const ticker = new Array(200).fill(title);
+        const ticker = new Array(300).fill(title);
 
         const emotionTicker = document.querySelector("div.ticker h1");
         emotionTicker.innerHTML = ticker.join("");

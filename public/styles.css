@@ -105,6 +105,12 @@ div.ticker {
     }
 }
 
+@media only screen and (max-width: 400px) {
+    div.ticker {
+        top: 2.5rem;
+    }
+}
+
 @media only screen and (max-height: 550px) and (max-width: 500px) {
     div.ticker {
         top: 4.5rem;
@@ -127,7 +133,7 @@ h1 {
     top: 10px;
     color: white;
 
-    animation: moveRight 60s linear infinite;
+    animation: moveRight 40s linear infinite;
     white-space: nowrap;
     position: relative;
     display: block;
@@ -385,7 +391,7 @@ button:hover {
 /* BROWSE */
 div.emotion-block {
     border-radius: 12px;
-    padding-top: 15px;
+    padding-top: 50px;
     padding-bottom: 15px;
     height: 300px;
     width: 100%;
@@ -404,6 +410,12 @@ div.emotion-block {
 @media only screen and (max-width: 500px) and (max-height: 650px) {
     div.emotion-block {
         height: 350px;
+    }
+}
+
+@media only screen and (max-height: 800px) {
+    div.emotion-block {
+        padding-top: 15px;
     }
 }
 
@@ -535,7 +547,13 @@ div.next {
     -ms-user-select: none;
     user-select: none;
 
+    position: fixed;
+    left: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+
     opacity: 0.9;
+    margin-top: 15px;
 }
 
 @media only screen and (max-height: 710px) and (max-width: 500px) {
