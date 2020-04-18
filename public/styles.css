@@ -392,7 +392,7 @@ button:hover {
 div.emotion-block {
     border-radius: 12px;
     padding-top: 50px;
-    padding-bottom: 15px;
+    padding-bottom: 30px;
     height: 300px;
     width: 100%;
 
@@ -553,37 +553,12 @@ div.next {
     -ms-user-select: none;
     user-select: none;
 
-    position: fixed;
-    left: 50%;
-    left: 50%;
-    transform: translateX(-50%);
-
     opacity: 0.9;
-    margin-top: 15px;
-}
-
-@media only screen and (max-height: 710px) and (max-width: 500px) {
-    div.next {
-        margin-top: -90px;
-    }
 }
 
 @media only screen and (max-height: 560px) and (max-width: 500px) {
     div.next {
-        margin-top: -35px;
         font-size: 2rem;
-    }
-}
-
-@media only screen and (max-height: 400px) and (max-width: 500px) {
-    div.next {
-        margin-top: -30px;
-    }
-}
-
-@media only screen and (max-height: 330px) {
-    div.next {
-        margin-top: -40px;
     }
 }
 

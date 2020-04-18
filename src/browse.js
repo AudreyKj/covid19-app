@@ -86,39 +86,36 @@ export default function Browse() {
     };
 
     return (
-        <div className="randomEmotion-wrapper">
-            <div className="randomEmotion">
-                <MetaTags>
-                    <title>corona emotions club</title>
-                    <meta
-                        name="description"
-                        content="COVID-19 emotions & feelings"
-                    />
-                    <meta property="og:title" content="corona emotions club" />
-                </MetaTags>
-                {randomEmotion &&
-                    randomEmotion.map(emotion => (
-                        <div
-                            className="emotion-block"
-                            style={color}
-                            key={emotion.id}
-                        >
-                            {emotion.emotion} <br />
-                            <span className="country">
-                                {emotion.country} <br />
-                            </span>
-                            <span className="date">
-                                <Moment format="MMMM Do YYYY">
-                                    {emotion.created_at}
-                                </Moment>
-                            </span>
+        <div className="randomEmotion">
+            <MetaTags>
+                <title>corona emotions club</title>
+                <meta
+                    name="description"
+                    content="COVID-19 emotions & feelings"
+                />
+                <meta property="og:title" content="corona emotions club" />
+            </MetaTags>
+            {randomEmotion &&
+                randomEmotion.map(emotion => (
+                    <div
+                        className="emotion-block"
+                        style={color}
+                        key={emotion.id}
+                    >
+                        {emotion.emotion} <br />
+                        <span className="country">
+                            {emotion.country} <br />
+                        </span>
+                        <span className="date">
+                            <Moment format="MMMM Do YYYY">
+                                {emotion.created_at}
+                            </Moment>
+                        </span>
+                        <div className="next" onClick={getNextEmotion}>
+                            <span className="next-arrow"> → </span>
                         </div>
-                    ))}
-
-                <div className="next" onClick={getNextEmotion}>
-                    <span className="next-arrow"> → </span>
-                </div>
-            </div>
+                    </div>
+                ))}
         </div>
     );
 }
