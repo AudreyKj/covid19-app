@@ -1,4 +1,5 @@
 import React from "react";
+import GoogleFontLoader from "react-google-font-loader";
 import { BrowserRouter, Route, NavLink } from "react-router-dom";
 import axios from "./axios";
 import Submit from "./submit";
@@ -8,9 +9,15 @@ import Info from "./info";
 export default class App extends React.Component {
     constructor(props) {
         super(props);
+        //this.state = { isloaded: true };
     }
 
     componentDidMount() {
+        //loading
+        // setTimeout(() => {
+        //     this.setState((state, props) => ({ isLoaded: false }));
+        // }, 5000);
+
         //ticker
         const title = "&nbsp;&nbsp;CORONA EMOTIONS CLUB&nbsp;&nbsp;";
         const ticker = new Array(300).fill(title);
@@ -30,15 +37,29 @@ export default class App extends React.Component {
     render() {
         return (
             <>
+                <GoogleFontLoader
+                    fonts={[
+                        {
+                            font: "Codystar",
+                            weights: [400, "400i"]
+                        }
+                    ]}
+                />
+
                 <div className="gradient"></div>
                 <div className="cursor"></div>
                 <div className="ticker">
-                    <h1>
+                    <h1
+                        style={{
+                            fontFamily: "Codystar",
+                            textShadow:
+                                "0 0 4em #fff, 0 0 0.2em #fff, 0 0 0.2em #fff, 0 0 0.3em #fff,0 0 0.4em #fff, 0 0 0.4em #fff, 0 0 0.4em #fff"
+                        }}
+                    >
                         CORONA EMOTIONS CLUB &nbsp;&nbsp; CORONA EMOTIONS CLUB
                         &nbsp;&nbsp;
                     </h1>
                 </div>
-
                 <BrowserRouter>
                     <nav>
                         <NavLink
