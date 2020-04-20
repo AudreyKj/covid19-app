@@ -8,7 +8,7 @@ This project's intention is to collect personal, emotional, yet global, perspect
 When all this is over, I hope that it could serve as a digital
 archive reminding us of this very strange time.
 <br /><br />
-**FEATURES**: submit form & browse section picking random submissions <br />
-**Technologies**: HTML, CSS, JavaScript, Node with Express.js, PostgreSQL <br />
+**Features**: submit form & browse section picking random submissions <br />
+**Tech stack**: HTML, CSS, JavaScript, Node with Express.js, PostgreSQL <br />
 **Testing**: React Testing Library + Jest <br />
-**Framework**: React | Deployed on Heroku
+**Framework**: React | **Deployment**: Heroku
