@@ -58,6 +58,7 @@ export default function Submit() {
                 />
                 <meta property="og:title" content="corona emotions club" />
             </MetaTags>
+
             <form className="submit">
                 <textarea
                     className="emotion"
@@ -88,9 +89,7 @@ export default function Submit() {
             )}
             {thankyou && (
                 <span className="thankyou">
-                    thank you for participating! discover others'
-                    submissions&nbsp;
-                    <Link to="/browse">here</Link>
+                    your submission has been added to the collection!
                 </span>
             )}
         </div>

@@ -5,6 +5,7 @@ import axios from "./axios";
 import Submit from "./submit";
 import Browse from "./browse";
 import Info from "./info";
+import MetaTags from "react-meta-tags";
 
 export default class App extends React.Component {
     constructor(props) {
@@ -37,30 +38,39 @@ export default class App extends React.Component {
     render() {
         return (
             <>
-                <GoogleFontLoader
-                    fonts={[
-                        {
-                            font: "Codystar",
-                            weights: [400, "400i"]
-                        }
-                    ]}
-                />
-
-                <div className="gradient"></div>
-                <div className="cursor"></div>
-                <div className="ticker">
-                    <h1
-                        style={{
-                            fontFamily: "Codystar",
-                            textShadow:
-                                "0 0 4em #fff, 0 0 0.2em #fff, 0 0 0.2em #fff, 0 0 0.3em #fff,0 0 0.4em #fff, 0 0 0.4em #fff, 0 0 0.4em #fff"
-                        }}
-                    >
-                        CORONA EMOTIONS CLUB &nbsp;&nbsp; CORONA EMOTIONS CLUB
-                        &nbsp;&nbsp;
-                    </h1>
-                </div>
+                <MetaTags>
+                    <title>corona emotions club</title>
+                    <meta
+                        name="description"
+                        content="COVID-19 emotions & feelings"
+                    />
+                    <meta property="og:title" content="corona emotions club" />
+                </MetaTags>
                 <BrowserRouter>
+                    <GoogleFontLoader
+                        fonts={[
+                            {
+                                font: "Codystar",
+                                weights: [400, "400i"]
+                            }
+                        ]}
+                    />
+
+                    <div className="gradient"></div>
+                    <div className="cursor"></div>
+                    <div className="ticker">
+                        <h1
+                            style={{
+                                fontFamily: "Codystar",
+                                textShadow:
+                                    "0 0 4em #fff, 0 0 0.2em #fff, 0 0 0.2em #fff, 0 0 0.3em #fff,0 0 0.4em #fff, 0 0 0.4em #fff, 0 0 0.4em #fff"
+                            }}
+                        >
+                            CORONA EMOTIONS CLUB &nbsp;&nbsp; CORONA EMOTIONS
+                            CLUB &nbsp;&nbsp;
+                        </h1>
+                    </div>
+
                     <nav>
                         <NavLink
                             className="link-menu"
