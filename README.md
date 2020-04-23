@@ -7,12 +7,13 @@ When all this is over, I hope that it could serve as a digital archive reminding
 
 ## Features
 
--   submit form with error handling
+-   submit form with error handling / success message
 -   browse section picking random submissions in the database
 
 ## Tech
 
 **Stack**: HTML, CSS, JavaScript, Node with Express.js, PostgreSQL <br />
+**Protection**: CSURF <br />
 **Testing**: React Testing Library + Jest <br />
 **Framework**: React | **Deployment**: Heroku
 
