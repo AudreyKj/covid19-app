@@ -30,27 +30,6 @@ body {
     padding: 0;
 }
 
-/* loading */
-/* @keyframes fadeOff {
-    from {
-        opacity: 1;
-    }
-    to {
-        opacity: 0;
-    }
-}
-
-div.loading {
-    width: 100%;
-    min-height: 100vh;
-
-    background: lightgrey;
-    z-index: 10000;
-    position: fixed;
-
-    animation: fadeOff 5s;
-} */
-
 div.cursor {
     width: 30px;
     height: 30px;
@@ -104,57 +83,25 @@ span.instructions {
     }
 }
 
-div.ticker {
-    position: absolute;
-    top: 3rem;
-    width: 100%;
-    line-height: 1;
-    z-index: 5;
-}
-
-@media only screen and (max-height: 720px) {
-    div.ticker {
-        top: 3.4rem;
-    }
-}
-
-@media only screen and (max-width: 630px) {
-    div.ticker {
-        top: 4.3rem;
-    }
-}
-
-@media only screen and (max-width: 400px) {
-    div.ticker {
-        top: 2.5rem;
-    }
-}
-
-@media only screen and (max-height: 550px) and (max-width: 500px) {
-    div.ticker {
-        top: 4.5rem;
-    }
-}
-
-@media only screen and (max-height: 400px) {
-    div.ticker {
-        top: 1.8rem;
-    }
-}
-
 h1 {
     font-size: 10vh;
     font-family: "Codystar", cursive;
 
     margin-top: 0;
     margin-bottom: 0;
-    top: 10px;
+    padding-top: 50px;
+    padding-bottom: 30px;
     color: white;
 
-    animation: moveRight 40s linear infinite;
     white-space: nowrap;
     position: relative;
     display: block;
+}
+
+@media (max-width: 630px) {
+    h1 {
+        margin-top: 10px;
+    }
 }
 
 @media only screen and (max-width: 900px) {
@@ -169,31 +116,12 @@ h1 {
     }
 }
 
-@keyframes moveRight {
-    0% {
-        transform: translateX(0);
-    }
-
-    100% {
-        transform: translateX(-100vw);
-    }
-}
-
-@-webkit-keyframes moveRight {
-    0% {
-        transform: translateY(0);
-    }
-
-    100% {
-        transform: translateX(-100vw);
-    }
-}
-
 nav {
     position: absolute;
     top: 10px;
     font-size: 1.5rem;
     margin-left: 15px;
+    z-index: 1500;
 }
 
 @media only screen and (max-width: 760px) {
@@ -220,31 +148,6 @@ div.submit {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 10%;
-}
-
-@media only screen and (max-width: 1030px) {
-    div.submit {
-        margin-top: 20%;
-    }
-}
-
-@media only screen and (max-width: 500px) {
-    div.submit {
-        margin-top: 30%;
-    }
-}
-
-@media only screen and (max-width: 600px) and (max-height: 740px) {
-    div.submit {
-        margin-top: 20%;
-    }
-}
-
-@media only screen and (max-width: 500px) and (max-height: 380px) {
-    div.submit {
-        margin-top: 5%;
-    }
 }
 
 form.submit {
@@ -466,7 +369,7 @@ div.randomEmotion {
     left: 50%;
     font-size: 2rem;
 
-    transform: translate(-50%, 50%);
+    transform: translate(-50%, 10%);
     width: 65%;
 
     text-align: center;
@@ -479,26 +382,6 @@ div.randomEmotion {
     }
 }
 
-@media only screen and (max-width: 1030px) {
-    div.randomEmotion {
-        transform: translate(-50%, 65%);
-    }
-}
-
-@media only screen and (max-width: 970px) {
-    div.randomEmotion {
-        width: 90%;
-        transform: translate(-50%, 40%);
-    }
-}
-
-@media only screen and (max-width: 770px) {
-    div.randomEmotion {
-        font-size: 1.9rem;
-        transform: translate(-50%, 40%);
-    }
-}
-
 @media only screen and (max-height: 850px) and (max-width: 590px) {
     div.randomEmotion {
         font-size: 1rem;
@@ -507,11 +390,11 @@ div.randomEmotion {
 
 @media only screen and (max-height: 680px) {
     div.randomEmotion {
-        transform: translate(-50%, 30%);
+        transform: translate(-50%, 5%);
     }
 }
 
-@media only screen and (max-height: 560px) and (max-width: 500px) {
+/* @media only screen and (max-height: 560px) and (max-width: 500px) {
     div.randomEmotion {
         transform: translate(-50%, 80%);
     }
@@ -527,9 +410,8 @@ div.randomEmotion {
     div.randomEmotion {
         transform: translate(-50%, 36%);
     }
-}
-
-span.country {
+} */
+*/ span.country {
     font-size: 1rem;
     font-style: italic;
     padding-top: 20px;

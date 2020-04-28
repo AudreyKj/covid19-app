@@ -1,5 +1,6 @@
 import React from "react";
 import GoogleFontLoader from "react-google-font-loader";
+import Ticker from "react-ticker";
 import { BrowserRouter, Route, NavLink } from "react-router-dom";
 import axios from "./axios";
 import Submit from "./submit";
@@ -10,23 +11,9 @@ import MetaTags from "react-meta-tags";
 export default class App extends React.Component {
     constructor(props) {
         super(props);
-        //this.state = { isloaded: true };
     }
 
     componentDidMount() {
-        //loading
-        // setTimeout(() => {
-        //     this.setState((state, props) => ({ isLoaded: false }));
-        // }, 5000);
-
-        //ticker
-        const title = "&nbsp;&nbsp;CORONA EMOTIONS CLUB&nbsp;&nbsp;";
-        const ticker = new Array(300).fill(title);
-
-        const emotionTicker = document.querySelector("div.ticker h1");
-        emotionTicker.innerHTML = ticker.join("");
-
-        //cursor
         const cursor = document.querySelector("div.cursor");
 
         document.addEventListener("mousemove", function(e) {
@@ -58,18 +45,21 @@ export default class App extends React.Component {
 
                     <div className="gradient"></div>
                     <div className="cursor"></div>
-                    <div className="ticker">
-                        <h1
-                            style={{
-                                fontFamily: "Codystar",
-                                textShadow:
-                                    "0 0 4em #fff, 0 0 0.2em #fff, 0 0 0.2em #fff, 0 0 0.3em #fff,0 0 0.4em #fff, 0 0 0.4em #fff, 0 0 0.4em #fff"
-                            }}
-                        >
-                            CORONA EMOTIONS CLUB &nbsp;&nbsp; CORONA EMOTIONS
-                            CLUB &nbsp;&nbsp;
-                        </h1>
-                    </div>
+
+                    <Ticker>
+                        {({ index }) => (
+                            <h1
+                                style={{
+                                    fontFamily: "Codystar",
+                                    textShadow:
+                                        "0 0 0.1em #fff, 0 0 0.15em #fff, 0 0 0.2em #fff, 0 0 0.25em #fff, 0 0 0.3em #fff, 0 0 0.3em #fff, 0 0 0.3em #fff"
+                                }}
+                            >
+                                CORONA EMOTIONS CLUB &nbsp;&nbsp; CORONA
+                                EMOTIONS CLUB &nbsp;&nbsp;
+                            </h1>
+                        )}
+                    </Ticker>
 
                     <nav>
                         <NavLink
