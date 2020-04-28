@@ -313,7 +313,7 @@ button:hover {
 div.emotion-block {
     border-radius: 12px;
     padding-top: 50px;
-    padding-bottom: 30px;
+    padding-bottom: 40px;
     height: 350px;
     width: 100%;
 
@@ -394,24 +394,13 @@ div.randomEmotion {
     }
 }
 
-/* @media only screen and (max-height: 560px) and (max-width: 500px) {
+@media only screen and (max-height: 500px) {
     div.randomEmotion {
-        transform: translate(-50%, 80%);
+        transform: translate(-50%, 0%);
     }
 }
 
-@media only screen and (max-height: 500px) and (max-width: 500px) {
-    div.randomEmotion {
-        transform: translate(-50%, 57%);
-    }
-}
-
-@media only screen and (max-height: 400px) and (max-width: 500px) {
-    div.randomEmotion {
-        transform: translate(-50%, 36%);
-    }
-} */
-*/ span.country {
+span.country {
     font-size: 1rem;
     font-style: italic;
     padding-top: 20px;
@@ -434,6 +423,7 @@ div.randomEmotion {
 span.date {
     font-size: 1rem;
     font-style: italic;
+    margin-top: 15px;
 }
 
 @media only screen and (max-width: 600px) {

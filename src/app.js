@@ -46,7 +46,7 @@ export default class App extends React.Component {
                     <div className="gradient"></div>
                     <div className="cursor"></div>
 
-                    <Ticker>
+                    <Ticker speed="4">
                         {({ index }) => (
                             <h1
                                 style={{
