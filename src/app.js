@@ -56,7 +56,9 @@ export default class App extends React.Component {
                                 }}
                             >
                                 CORONA EMOTIONS CLUB &nbsp;&nbsp; CORONA
-                                EMOTIONS CLUB &nbsp;&nbsp;
+                                EMOTIONS CLUB &nbsp;&nbsp; CORONA EMOTIONS CLUB
+                                &nbsp;&nbsp; CORONA EMOTIONS CLUB
+                                &nbsp;&nbsp;CORONA EMOTIONS CLUB &nbsp;&nbsp;
                             </h1>
                         )}
                     </Ticker>
