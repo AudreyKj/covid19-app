@@ -96,6 +96,7 @@ h1 {
     white-space: nowrap;
     position: relative;
     display: block;
+    z-index: 1000;
 }
 
 @media (max-width: 630px) {
@@ -113,6 +114,12 @@ h1 {
 @media only screen and (max-width: 700px) {
     h1 {
         font-size: 7vh;
+    }
+}
+
+@media only screen and (max-height: 400px) {
+    h1 {
+        margin-top: -10px;
     }
 }
 
@@ -150,6 +157,18 @@ div.submit {
     align-items: center;
 }
 
+@media only screen and (max-height: 400px) {
+    div.submit {
+        margin-top: -20px;
+    }
+}
+
+@media only screen and (max-height: 320px) {
+    div.submit {
+        margin-top: -30px;
+    }
+}
+
 form.submit {
     display: flex;
     flex-direction: column;
@@ -183,6 +202,7 @@ textarea.emotion {
 @media only screen and (max-width: 700px) {
     textarea.emotion {
         font-size: 1.5rem;
+        margin-top: 0;
     }
 }
 
@@ -382,15 +402,33 @@ div.randomEmotion {
     }
 }
 
-@media only screen and (max-height: 700px) {
+@media only screen and (max-height: 800px) {
     div.randomEmotion {
         transform: translate(-50%, 3%);
     }
 }
 
-@media only screen and (max-height: 500px) {
+@media only screen and (max-height: 730px) and (max-width: 500px) {
     div.randomEmotion {
-        transform: translate(-50%, 0%);
+        transform: translate(-50%, -3%);
+    }
+}
+
+@media only screen and (max-height: 500px) and (max-width: 500px) {
+    div.randomEmotion {
+        transform: translate(-50%, -6%);
+    }
+}
+
+@media only screen and (max-height: 440px) and (max-width: 500px) {
+    div.randomEmotion {
+        transform: translate(-50%, -8%);
+    }
+}
+
+@media only screen and (max-height: 400px) and (max-width: 500px) {
+    div.randomEmotion {
+        transform: translate(-50%, -10%);
     }
 }
 

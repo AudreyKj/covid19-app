@@ -59,6 +59,8 @@ export default class App extends React.Component {
                                 EMOTIONS CLUB &nbsp;&nbsp; CORONA EMOTIONS CLUB
                                 &nbsp;&nbsp; CORONA EMOTIONS CLUB
                                 &nbsp;&nbsp;CORONA EMOTIONS CLUB &nbsp;&nbsp;
+                                CORONA EMOTIONS CLUB &nbsp;&nbsp;CORONA EMOTIONS
+                                CLUB &nbsp;&nbsp;
                             </h1>
                         )}
                     </Ticker>
