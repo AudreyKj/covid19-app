@@ -9,7 +9,7 @@ html {
     cursor: none;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 850px) {
     html {
         cursor: auto;
     }
@@ -41,7 +41,7 @@ div.cursor {
     pointer-events: none;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 850px) {
     div.cursor {
         display: none;
     }
@@ -98,12 +98,6 @@ h1 {
     z-index: 1000;
 }
 
-@media (max-width: 630px) {
-    h1 {
-        margin-top: 10px;
-    }
-}
-
 @media only screen and (max-width: 900px) {
     h1 {
         font-size: 9vh;
@@ -113,6 +107,12 @@ h1 {
 @media only screen and (max-width: 700px) {
     h1 {
         font-size: 7vh;
+    }
+}
+
+@media (max-width: 630px) {
+    h1 {
+        margin-top: 10px;
     }
 }
 
@@ -198,23 +198,25 @@ textarea.emotion {
     outline: none;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 950px) and (max-height: 560px) {
+    textarea.emotion {
+        font-size: 1rem;
+        height: 100px;
+        margin-top: 0;
+    }
+}
+
+@media only screen and (max-width: 750px) {
     textarea.emotion {
         font-size: 1.5rem;
         margin-top: 0;
     }
 }
 
-@media only screen and (max-width: 600px) and (max-height: 560px) {
+@media only screen and (max-width: 400px) {
     textarea.emotion {
-        font-size: 1rem;
-        height: 100px;
-    }
-}
-
-@media only screen and (max-width: 400px) and (max-width: 650px) {
-    textarea.emotion {
-        font-size: 1rem;
+        font-size: 0.9rem;
+        margin-top: 0;
     }
 }
 
@@ -226,21 +228,21 @@ input.country {
     outline: none;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 950px) and (max-height: 560px) {
+    input.country {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 750px) {
     input.country {
         font-size: 1.5rem;
     }
 }
 
-@media only screen and (max-width: 600px) and (max-height: 560px) {
-    input.country {
-        font-size: 1rem;
-    }
-}
-
 @media only screen and (max-width: 400px) {
     input.country {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 }
 
@@ -251,7 +253,7 @@ span.thankyou {
     text-align: center;
 }
 
-@media only screen and (max-width: 620px) {
+@media only screen and (max-width: 850px) {
     span.thankyou {
         font-size: 1rem;
     }
@@ -277,7 +279,7 @@ span.error {
     text-align: center;
 }
 
-@media only screen and (max-width: 620px) {
+@media only screen and (max-width: 850px) {
     span.error {
         font-size: 1rem;
     }
@@ -298,7 +300,7 @@ span.error {
 button {
     padding: 0.6em 2em;
     margin-top: 40px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 
     background-color: white;
     border: none;
@@ -347,27 +349,30 @@ div.emotion-block {
     }
 }
 
+@media only screen and (max-width: 500px) and (max-height: 740px) {
+    div.emotion-block {
+        height: 400px;
+        padding-top: 0;
+    }
+}
+
 @media only screen and (max-width: 500px) and (max-height: 650px) {
     div.emotion-block {
         height: 350px;
     }
 }
 
-@media only screen and (max-height: 740px) and (max-width: 500px) {
-    div.emotion-block {
-        height: 400px;
-    }
-}
-
-@media only screen and (max-height: 560px) and (max-width: 500px) {
+@media only screen and (max-width: 500px) and (max-height: 560px) {
     div.emotion-block {
         height: 200px;
+        padding-top: 0;
     }
 }
 
-@media only screen and (max-height: 370px) {
+@media only screen and (max-height: 420px) {
     div.emotion-block {
         height: 190px;
+        margin-top: -15px;
     }
 }
 
@@ -376,7 +381,7 @@ div.randomEmotion {
     left: 50%;
     font-size: 2rem;
 
-    transform: translate(-50%, 10%);
+    transform: translate(-50%, 8%);
     width: 65%;
 
     text-align: center;
@@ -389,45 +394,16 @@ div.randomEmotion {
     }
 }
 
-@media only screen and (max-height: 850px) and (max-width: 700px) {
-    div.randomEmotion {
-        font-size: 1.9rem;
-    }
-}
-
 @media only screen and (max-height: 850px) and (max-width: 900px) {
     div.randomEmotion {
-        font-size: 1rem;
-    }
-}
-
-@media only screen and (max-height: 800px) {
-    div.randomEmotion {
-        transform: translate(-50%, 3%);
-    }
-}
-
-@media only screen and (max-height: 730px) and (max-width: 900px) {
-    div.randomEmotion {
-        transform: translate(-50%, -3%);
-    }
-}
-
-@media only screen and (max-height: 500px) and (max-width: 900px) {
-    div.randomEmotion {
+        font-size: 0.8rem;
         transform: translate(-50%, -6%);
-    }
-}
-
-@media only screen and (max-height: 440px) and (max-width: 900px) {
-    div.randomEmotion {
-        transform: translate(-50%, -8%);
     }
 }
 
 @media only screen and (max-height: 400px) and (max-width: 900px) {
     div.randomEmotion {
-        transform: translate(-50%, -10%);
+        font-size: 0.6rem;
     }
 }
 
@@ -438,9 +414,15 @@ span.country {
     padding-bottom: 20px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-height: 850px) and (max-width: 900px) {
     span.country {
         font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-height: 400px) and (max-width: 900px) {
+    span.country {
+        font-size: 0.6rem;
     }
 }
 
@@ -457,9 +439,15 @@ span.date {
     margin-top: 15px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-height: 850px) and (max-width: 900px) {
     span.date {
         font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-height: 400px) and (max-width: 900px) {
+    span.date {
+        font-size: 0.6rem;
     }
 }
 
@@ -515,11 +503,11 @@ p.info_text {
 
 @media only screen and (max-width: 950px) {
     p.info_text {
-        font-size: 1.3rem;
+        font-size: 1rem;
     }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 750px) {
     p.info_text {
         font-size: 1rem;
     }
