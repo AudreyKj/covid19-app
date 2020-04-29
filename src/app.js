@@ -52,7 +52,8 @@ export default class App extends React.Component {
                                 style={{
                                     fontFamily: "Codystar",
                                     textShadow:
-                                        "0 0 0.1em #fff, 0 0 0.15em #fff, 0 0 0.2em #fff, 0 0 0.25em #fff, 0 0 0.3em #fff, 0 0 0.3em #fff, 0 0 0.3em #fff"
+                                        "0 0 0.1em #fff, 0 0 0.15em #fff, 0 0 0.2em #fff, 0 0 0.25em #fff, 0 0 0.3em #fff, 0 0 0.3em #fff, 0 0 0.3em #fff",
+                                    zIndex: "1000"
                                 }}
                             >
                                 CORONA EMOTIONS CLUB &nbsp;&nbsp; CORONA
