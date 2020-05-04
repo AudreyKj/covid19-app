@@ -324,7 +324,7 @@ div.emotion-block {
     }
 }
 
-@media only screen and (max-width: 850px) and (max-height: 450px) {
+@media only screen and (max-width: 850px) and (max-height: 400px) {
     div.emotion-block {
         height: 150px;
         margin-top: -20px;
@@ -395,6 +395,12 @@ div.randomEmotion {
     }
 }
 
+@media only screen and (max-width: 750px) {
+    div.randomEmotion {
+        font-size: 0.8rem;
+    }
+}
+
 @media only screen and (max-height: 850px) and (max-width: 900px) {
     div.randomEmotion {
         transform: translate(-50%, 3%);
@@ -409,12 +415,6 @@ span.country {
 }
 
 @media only screen and (max-width: 960px) {
-    span.country {
-        font-size: 0.8rem;
-    }
-}
-
-@media only screen and (max-height: 400px) and (max-width: 900px) {
     span.country {
         font-size: 0.7rem;
     }
@@ -435,7 +435,7 @@ span.date {
 
 @media only screen and (max-width: 960px) {
     span.date {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
 }
 
