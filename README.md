@@ -17,7 +17,23 @@ When all this is over, I hope that it could serve as a digital archive reminding
 **Testing**: React Testing Library + Jest <br />
 **Framework**: React | **Deployment**: Heroku
 
+## Design - color palette
+
+<p align="center">
+<img width="150" height="250" src="palette.jpg">
+<p align="center">
+--> pastel pink, #db91a9 </br>
+--> dark beige, #daa520 </br>
+--> pastel green, #66cdaa </br>
+--> green, #008000 </br>
+</p>
+</p>
+
 ## Visuals
 
 ![screenshot](screenshot_2.png)
 ![screenshot](screenshot_1.png)
+
+<p align="center">
+<img width="300" height="550" src="mobile.png">
+</p>
