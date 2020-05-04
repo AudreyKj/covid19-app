@@ -348,7 +348,6 @@ div.emotion-block {
     div.emotion-block {
         height: 200px;
         margin-top: -25px;
-        font-size: 0.7rem;
     }
 }
 
@@ -411,12 +410,6 @@ span.country {
 
 @media only screen and (max-width: 960px) {
     span.country {
-        font-size: 0.9rem;
-    }
-}
-
-@media only screen and (max-height: 850px) and (max-width: 900px) {
-    span.country {
         font-size: 0.8rem;
     }
 }
@@ -441,12 +434,6 @@ span.date {
 }
 
 @media only screen and (max-width: 960px) {
-    span.date {
-        font-size: 0.9rem;
-    }
-}
-
-@media only screen and (max-height: 850px) and (max-width: 900px) {
     span.date {
         font-size: 0.8rem;
     }
