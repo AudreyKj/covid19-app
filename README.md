@@ -25,7 +25,7 @@ When all this is over, I hope that it could serve as a digital archive reminding
 <img width="150" height="250" src="palette.jpg">
 <p align="center">
 pastel pink, #db91a9 </br>
-dark beige, #daa520 </br>
+light grey, #e9e9e9 </br>
 pastel green, #66cdaa </br>
 green, #008000 </br>
 </p>
