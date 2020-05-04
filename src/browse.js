@@ -29,7 +29,7 @@ export default function Browse() {
                 "rgba(0, 177, 89, 0.7)"
             ];
 
-            const randomColor = colorPalette[Math.floor(Math.random() * 12)];
+            const randomColor = colorPalette[Math.floor(Math.random() * 11)];
 
             const style = {
                 newStyle: {
@@ -66,11 +66,11 @@ export default function Browse() {
                 "rgba(70,132,153, 0.7)",
                 "rgba(255,165,0, 0.7)",
                 "rgba(218,165,32, 0.7)",
-                "rgba(255, 0, 0, 0.7)",
+                "rgba(255, 0, 0, 0.5)",
                 "rgba(0, 177, 89, 0.7)"
             ];
 
-            const randomColor = colorPalette[Math.floor(Math.random() * 12)];
+            const randomColor = colorPalette[Math.floor(Math.random() * 11)];
 
             const style = {
                 newStyle: {

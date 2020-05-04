@@ -5,6 +5,8 @@ In this React app, users share their personal experiences of the COVID-19 outbre
 This project's intention is to collect personal, emotional, yet global, perspectives on the situation.
 When all this is over, I hope that it could serve as a digital archive reminding us of this very strange time.
 
+[visit live app](https://corona-emotions.club)
+
 ## Features
 
 -   submit form with error handling / success message

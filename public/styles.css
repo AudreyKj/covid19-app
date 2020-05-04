@@ -199,6 +199,12 @@ textarea.emotion {
     outline: none;
 }
 
+@media only screen and (max-width: 1130px) {
+    textarea.emotion {
+        margin-top: 0;
+    }
+}
+
 @media only screen and (max-width: 950px) {
     textarea.emotion {
         font-size: 1rem;
@@ -285,7 +291,7 @@ button {
     cursor: none;
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 815px) {
     button {
         font-size: 1rem;
         padding: 0.4em 1em;
@@ -318,14 +324,21 @@ div.emotion-block {
     }
 }
 
-@media only screen and (max-width: 500px) and (max-height: 740px) {
+@media only screen and (max-width: 850px) and (max-height: 450px) {
     div.emotion-block {
-        height: 400px;
-        padding-top: 0;
+        height: 150px;
+        margin-top: -15px;
     }
 }
 
-@media only screen and (max-width: 500px) and (max-height: 650px) {
+@media only screen and (max-width: 560px) and (max-height: 740px) {
+    div.emotion-block {
+        height: 400px;
+        padding-top: 15px;
+    }
+}
+
+@media only screen and (max-width: 560px) and (max-height: 650px) {
     div.emotion-block {
         height: 350px;
     }
@@ -334,14 +347,16 @@ div.emotion-block {
 @media only screen and (max-width: 500px) and (max-height: 560px) {
     div.emotion-block {
         height: 200px;
-        padding-top: 0;
+        margin-top: -25px;
+        font-size: 0.7rem;
     }
 }
 
-@media only screen and (max-height: 420px) {
+@media only screen and (max-height: 460px) and (max-width: 400px) {
     div.emotion-block {
-        height: 190px;
-        margin-top: -15px;
+        height: 250px;
+        margin-top: -30px;
+        padding-top: 10px;
     }
 }
 
@@ -363,10 +378,29 @@ div.randomEmotion {
     }
 }
 
+@media only screen and (max-width: 1040px) and (max-height: 730px) {
+    div.randomEmotion {
+        transform: translate(-50%, 5%);
+    }
+}
+
+@media only screen and (max-width: 1040px) and (max-height: 600px) {
+    div.randomEmotion {
+        transform: translate(-50%, 2%);
+        font-size: 0.9rem;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    div.randomEmotion {
+        font-size: 1.2rem;
+    }
+}
+
 @media only screen and (max-height: 850px) and (max-width: 900px) {
     div.randomEmotion {
-        font-size: 0.8rem;
-        transform: translate(-50%, -6%);
+        font-size: 0.9rem;
+        transform: translate(-50%, 1%);
     }
 }
 
