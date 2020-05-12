@@ -20,16 +20,14 @@ export default function Browse() {
                 "rgba(160,212,216, 0.9)",
                 "rgba(102,205,170, 0.7)",
                 "rgba(153,102,255, 0.7)",
-                "rgba(51,153,255, 0.7)",
                 "rgba(97,174,251, 0.7)",
                 "rgba(70,132,153, 0.7)",
                 "rgba(255,165,0, 0.7)",
                 "rgba(218,165,32, 0.7)",
-                "rgba(255, 0, 0, 0.5)",
                 "rgba(0, 177, 89, 0.7)"
             ];
 
-            const randomColor = colorPalette[Math.floor(Math.random() * 11)];
+            const randomColor = colorPalette[Math.floor(Math.random() * 9)];
 
             const style = {
                 newStyle: {
@@ -61,16 +59,17 @@ export default function Browse() {
                 "rgba(160,212,216, 0.9)",
                 "rgba(102,205,170, 0.7)",
                 "rgba(153,102,255, 0.7)",
-                "rgba(51,153,255, 0.7)",
                 "rgba(97,174,251, 0.7)",
                 "rgba(70,132,153, 0.7)",
                 "rgba(255,165,0, 0.7)",
                 "rgba(218,165,32, 0.7)",
-                "rgba(255, 0, 0, 0.5)",
                 "rgba(0, 177, 89, 0.7)"
             ];
 
-            const randomColor = colorPalette[Math.floor(Math.random() * 11)];
+            colorPalette.filter(elem => {
+                elem !== color;
+            });
+            const randomColor = colorPalette[Math.floor(Math.random() * 9)];
 
             const style = {
                 newStyle: {
