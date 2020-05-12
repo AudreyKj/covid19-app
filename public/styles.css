@@ -334,7 +334,6 @@ div.emotion-block {
 
 @media only screen and (max-width: 700px) {
     div.emotion-block {
-        max-width: 300px;
         border-radius: 12px;
         font-size: 0.8rem;
     }

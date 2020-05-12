@@ -54,7 +54,7 @@ export default function Browse() {
 
             setRandomEmotion(result);
 
-            const colorPalette = [
+            let colorPalette = [
                 "rgba(219,145,169, 0.7)",
                 "rgba(160,212,216, 0.9)",
                 "rgba(102,205,170, 0.7)",
@@ -66,10 +66,11 @@ export default function Browse() {
                 "rgba(0, 177, 89, 0.7)"
             ];
 
-            colorPalette.filter(elem => {
-                elem !== color;
+            colorPalette = colorPalette.filter(elem => {
+                return elem != color.backgroundColor;
             });
-            const randomColor = colorPalette[Math.floor(Math.random() * 9)];
+
+            const randomColor = colorPalette[Math.floor(Math.random() * 8)];
 
             const style = {
                 newStyle: {
