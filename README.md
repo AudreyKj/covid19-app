@@ -21,9 +21,9 @@ When all this is over, I hope that it could serve as a digital archive reminding
 
 ## Visuals
 
-![screenshot](screenshot_2.png)
-![screenshot](screenshot_1.png)
+![screenshot](readMe/screenshot_2.png)
+![screenshot](readMe/screenshot_1.png)
 
 <p align="center">
-<img width="300" height="550" src="mobile.png">
+<img width="300" height="550" src="readMe/mobile.png">
 </p>
