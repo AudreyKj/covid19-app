@@ -35,7 +35,7 @@ export default class App extends React.Component {
                     />
                     <meta
                         name="application-name"
-                        content="Corona Emotions Club"
+                        content="corona emotions club"
                     />
                     <meta name="theme-color" content="green" />
                     <meta property="og:image:width" content="1080" />
@@ -44,7 +44,6 @@ export default class App extends React.Component {
                         property="og:url"
                         content="https://corona-emotions.club/browse"
                     />
-                    <meta property="og:title" content="Corona Emotions Club" />
                     <meta
                         property="og:description"
                         content="Corona Emotions Club"

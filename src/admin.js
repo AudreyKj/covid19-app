@@ -16,6 +16,9 @@ function Admin() {
                     return setError(true);
                 }
 
+                console.log("data", data);
+
+                //COUNTRY DATA
                 let collect = {};
 
                 for (let i = 0; i < data.data[0].length; i++) {
@@ -25,6 +28,8 @@ function Admin() {
                             : (collect[data.data[0][i][key].toUpperCase()] = 1);
                     }
                 }
+
+                console.log("collect", collect);
 
                 const country_label = [];
                 const country_values = [];
@@ -61,6 +66,7 @@ function Admin() {
                     ]
                 });
 
+                //DATE OF SUBMISSIONS
                 function monthConvertor(str) {
                     if (str === "01") {
                         return "January";
