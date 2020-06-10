@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Moment from "react-moment";
 import axios from "./axios";
-import MetaTags from "react-meta-tags";
 
 export default function Browse() {
     const [randomEmotion, setRandomEmotion] = useState();
@@ -85,14 +84,6 @@ export default function Browse() {
 
     return (
         <div className="randomEmotion">
-            <MetaTags>
-                <title>corona emotions club</title>
-                <meta
-                    name="description"
-                    content="COVID-19 emotions & feelings"
-                />
-                <meta property="og:title" content="corona emotions club" />
-            </MetaTags>
             {randomEmotion &&
                 randomEmotion.map(emotion => (
                     <div
