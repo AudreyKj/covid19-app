@@ -34,9 +34,17 @@ function Admin() {
 
                         if (
                             data.data[0][i][key].toUpperCase().trim() ===
-                            "NOWHERE"
+                            "LONDON"
                         ) {
-                            data.data[0][i][key] = "OTHER";
+                            data.data[0][i][key] = "UK";
+                        }
+
+                        if (
+                            data.data[0][i][key].toUpperCase().trim() ===
+                                "NOWHERE" ||
+                            typeof data.data[0][i][key] !== "string"
+                        ) {
+                            data.data[0][i][key] = "COUNTRY DOES NOT EXISTS";
                         }
                         collect[data.data[0][i][key].toUpperCase().trim()]
                             ? (collect[
@@ -144,7 +152,8 @@ function Admin() {
                     labels: month_label,
                     datasets: [
                         {
-                            label: "submissions frequency per month",
+                            label:
+                                "submissions frequency per month from April 2020",
                             fill: false,
                             lineTension: 0.1,
                             backgroundColor: "rgba(75,192,192,0.4)",
@@ -190,6 +199,9 @@ function Admin() {
                             <Line data={monthData} />
                         </div>
                         <div className="single-chart bottom">
+                            <span className="data">
+                                Where the submissions come from by country
+                            </span>
                             <Pie
                                 data={country}
                                 width={300}
