@@ -119,7 +119,7 @@ export default class App extends React.Component {
                         >
                             data
                         </NavLink>
-                        &nbsp; 🦠
+                        &nbsp; 🦠 &nbsp;
                         <span className="instructions">
                             how do you feel about the COVID-19 crisis? let it
                             all out!
