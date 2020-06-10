@@ -200,7 +200,7 @@ function Admin() {
                         </div>
                         <div className="single-chart bottom">
                             <span className="data">
-                                Where the submissions come from by country
+                                Countries where the submissions come from
                             </span>
                             <Pie
                                 data={country}

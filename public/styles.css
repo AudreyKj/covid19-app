@@ -532,7 +532,7 @@ h3 {
     width: 100%;
     text-align: center;
     margin: 0;
-    font-size: 2rem;
+    font-size: 1.2rem;
     font-weight: 300;
 }
 
@@ -542,7 +542,7 @@ div.data-container {
     flex-direction: column;
     width: 100%;
     min-height: 100%;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 div.single-chart {
@@ -551,7 +551,7 @@ div.single-chart {
 }
 
 .bottom {
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 h4.dataError {
