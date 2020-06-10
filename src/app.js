@@ -6,7 +6,8 @@ import axios from "./axios";
 import Submit from "./submit";
 import Browse from "./browse";
 import Info from "./info";
-import MetaTags from "react-meta-tags";
+import Admin from "./admin";
+import { Helmet } from "react-helmet";
 
 export default class App extends React.Component {
     constructor(props) {
@@ -25,14 +26,33 @@ export default class App extends React.Component {
     render() {
         return (
             <>
-                <MetaTags>
-                    <title>corona emotions club</title>
+                <Helmet>
+                    <title>Corona Emotions Club</title>
+                    <meta name="description" content="COVID-19" />
                     <meta
-                        name="description"
-                        content="COVID-19 emotions & feelings"
+                        name="keywords"
+                        content="COVID-19, corona virus, pandemie"
                     />
-                    <meta property="og:title" content="corona emotions club" />
-                </MetaTags>
+                    <meta
+                        name="application-name"
+                        content="Corona Emotions Club"
+                    />
+                    <meta name="theme-color" content="green" />
+                    <meta property="og:image:width" content="1080" />
+                    <meta property="og:image:height" content="1080" />
+                    <meta
+                        property="og:url"
+                        content="https://corona-emotions.club/browse"
+                    />
+                    <meta property="og:title" content="Corona Emotions Club" />
+                    <meta
+                        property="og:description"
+                        content="Corona Emotions Club"
+                    />
+                    <meta property="og:image" content="preview.jpg" />
+                    <meta property="og:image:url" content="preview.jpg" />
+                </Helmet>
+
                 <BrowserRouter>
                     <GoogleFontLoader
                         fonts={[
@@ -92,7 +112,15 @@ export default class App extends React.Component {
                         >
                             info
                         </NavLink>
-                        &nbsp;&nbsp;🦠 &nbsp;
+                        &nbsp;&nbsp;
+                        <NavLink
+                            className="link-menu"
+                            activeClassName="active"
+                            to="/admin"
+                        >
+                            data
+                        </NavLink>
+                        &nbsp; 🦠
                         <span className="instructions">
                             how do you feel about the COVID-19 crisis? let it
                             all out!
@@ -104,6 +132,8 @@ export default class App extends React.Component {
                     <Route path="/browse" component={Browse}></Route>
 
                     <Route path="/info" component={Info}></Route>
+
+                    <Route path="/admin" component={Admin}></Route>
                 </BrowserRouter>
             </>
         );

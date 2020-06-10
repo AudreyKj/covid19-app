@@ -91,6 +91,21 @@ app.post("/postemotion", function(req, res) {
         });
 });
 
+//GET DATA FOR DASHBOARD
+app.get("/data", async function(req, res) {
+    try {
+        const getCountry = await db.getCountry();
+        const getDate = await db.getDate();
+        const result = [];
+
+        result.push(getCountry.rows);
+        result.push(getDate.rows);
+        return res.json(result);
+    } catch (error) {
+        res.json({ error: true });
+    }
+});
+
 app.get("*", function(req, res) {
     res.redirect("/browse");
 });

@@ -24,6 +24,16 @@ function getEmotion(numberofRows) {
     );
 }
 
+function getCountry() {
+    return db.query(`SELECT country FROM emotions`);
+}
+
+function getDate() {
+    return db.query(`SELECT created_at FROM emotions`);
+}
+
 exports.insertEmotion = insertEmotion;
 exports.getNumbersOfRows = getNumbersOfRows;
 exports.getEmotion = getEmotion;
+exports.getCountry = getCountry;
+exports.getDate = getDate;

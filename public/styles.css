@@ -524,3 +524,36 @@ p.info_text {
         margin-top: 50px;
     }
 }
+
+/* DATA VISUALIZATION DASHBOARDS */
+
+h3 {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    font-size: 2rem;
+}
+
+div.data-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100%;
+    margin-top: 20px;
+}
+
+div.single-chart {
+    width: 30%;
+}
+
+.bottom {
+    margin-top: 30px;
+}
+
+h4.dataError {
+    color: red;
+    font-style: italic;
+    width: 100%;
+    text-align: center;
+}
