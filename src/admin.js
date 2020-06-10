@@ -23,13 +23,30 @@ function Admin() {
 
                 for (let i = 0; i < data.data[0].length; i++) {
                     for (let key in data.data[0][i]) {
-                        collect[data.data[0][i][key]]
-                            ? (collect[data.data[0][i][key].toUpperCase()] += 1)
-                            : (collect[data.data[0][i][key].toUpperCase()] = 1);
+                        if (
+                            data.data[0][i][key].toUpperCase().trim() ===
+                                "MIGHTY GERMANY" ||
+                            data.data[0][i][key].toUpperCase().trim() ===
+                                "G*RMANY"
+                        ) {
+                            data.data[0][i][key] = "GERMANY";
+                        }
+
+                        if (
+                            data.data[0][i][key].toUpperCase().trim() ===
+                            "NOWHERE"
+                        ) {
+                            data.data[0][i][key] = "OTHER";
+                        }
+                        collect[data.data[0][i][key].toUpperCase().trim()]
+                            ? (collect[
+                                  data.data[0][i][key].toUpperCase().trim()
+                              ] += 1)
+                            : (collect[
+                                  data.data[0][i][key].toUpperCase().trim()
+                              ] = 1);
                     }
                 }
-
-                console.log("collect", collect);
 
                 const country_label = [];
                 const country_values = [];
@@ -160,7 +177,7 @@ function Admin() {
     return (
         <>
             <div>
-                <h3> DATA VISUALIZATION ABOUT THE SUBMISSIONS </h3>
+                <h3> DATA VISUALIZATION OF THE SUBMISSIONS </h3>
                 {error && (
                     <h4 className="dataError">
                         ERROR: something went wrong in fetching the data. <br />
