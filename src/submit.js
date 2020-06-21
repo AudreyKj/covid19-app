@@ -89,7 +89,11 @@ export default function Submit() {
             )}
             {thankyou && (
                 <span className="thankyou">
-                    your submission has been added to the collection!
+                    your submission has been added to the collection! <br />
+                    <Link className="link-submit" to="/browse">
+                        browse&nbsp;
+                    </Link>
+                    through the submissions
                 </span>
             )}
         </div>

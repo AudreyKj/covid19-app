@@ -15,7 +15,7 @@ When all this is over, I hope that it could serve as a digital archive reminding
 
 ## Tech
 
-**Stack**: HTML, CSS, JavaScript, Node with Express.js, PostgreSQL, chart.js <br />
+**Stack**: HTML, SASS/SCSS, JavaScript, Node with Express.js, PostgreSQL, chart.js <br />
 **Protection**: CSURF <br />
 **Testing**: React Testing Library + Jest <br />
 **Framework**: React | **Deployment**: Heroku

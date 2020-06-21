@@ -22,7 +22,14 @@ export default function Info() {
                 hope that it could serve as a digital archive reminding us of
                 this very strange time.
                 <br /> <br />
-                website made by Audrey Kadjar
+                website developed by&nbsp;
+                <a
+                    href="https://github.com/AudreyKj"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Audrey Kadjar
+                </a>
             </p>
         </div>
     );

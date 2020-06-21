@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import { BrowserRouter } from "react-router-dom";
 import Browse from "./browse";
 import App from "./app";
 
@@ -11,4 +12,9 @@ if (location.pathname === "/") {
     component = <App />;
 }
 
-ReactDOM.render(component, document.querySelector("main"));
+ReactDOM.render(
+    <BrowserRouter>
+        <App />
+    </BrowserRouter>,
+    document.querySelector("main")
+);

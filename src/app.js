@@ -46,94 +46,91 @@ export default class App extends React.Component {
                     />
                     <meta
                         property="og:description"
-                        content="Corona Emotions Club"
+                        content="corona emotions club"
                     />
                     <meta property="og:image" content="preview.jpg" />
                     <meta property="og:image:url" content="preview.jpg" />
                 </Helmet>
 
-                <BrowserRouter>
-                    <GoogleFontLoader
-                        fonts={[
-                            {
-                                font: "Codystar",
-                                weights: [400, "400i"]
-                            }
-                        ]}
-                    />
+                <GoogleFontLoader
+                    fonts={[
+                        {
+                            font: "Codystar",
+                            weights: [400, "400i"]
+                        }
+                    ]}
+                />
 
-                    <div className="gradient"></div>
-                    <div className="cursor"></div>
+                <div className="gradient"></div>
+                <div className="cursor"></div>
 
-                    <Ticker speed={4}>
-                        {({ index }) => (
-                            <h1
-                                style={{
-                                    fontFamily: "Codystar",
-                                    textShadow:
-                                        "0 0 0.1em #fff, 0 0 0.15em #fff, 0 0 0.2em #fff, 0 0 0.25em #fff, 0 0 0.3em #fff, 0 0 0.3em #fff, 0 0 0.3em #fff",
-                                    zIndex: "1000"
-                                }}
-                            >
-                                CORONA EMOTIONS CLUB &nbsp;&nbsp; CORONA
-                                EMOTIONS CLUB &nbsp;&nbsp; CORONA EMOTIONS CLUB
-                                &nbsp;&nbsp; CORONA EMOTIONS CLUB
-                                &nbsp;&nbsp;CORONA EMOTIONS CLUB &nbsp;&nbsp;
-                                CORONA EMOTIONS CLUB &nbsp;&nbsp;CORONA EMOTIONS
-                                CLUB &nbsp;&nbsp;&nbsp;&nbsp; CORONA EMOTIONS
-                                CLUB &nbsp;&nbsp;CORONA EMOTIONS CLUB
-                                &nbsp;&nbsp;
-                            </h1>
-                        )}
-                    </Ticker>
-
-                    <nav>
-                        <NavLink
-                            className="link-menu"
-                            activeClassName="active"
-                            to="/submit"
+                <Ticker speed={4}>
+                    {({ index }) => (
+                        <h1
+                            style={{
+                                fontFamily: "Codystar",
+                                textShadow:
+                                    "0 0 0.1em #fff, 0 0 0.15em #fff, 0 0 0.2em #fff, 0 0 0.25em #fff, 0 0 0.3em #fff, 0 0 0.3em #fff, 0 0 0.3em #fff",
+                                zIndex: "1000"
+                            }}
                         >
-                            submit
-                        </NavLink>
-                        &nbsp;&nbsp;
-                        <NavLink
-                            className="link-menu"
-                            activeClassName="active"
-                            to="/browse"
-                        >
-                            browse
-                        </NavLink>
-                        &nbsp;&nbsp;
-                        <NavLink
-                            className="link-menu"
-                            activeClassName="active"
-                            to="/info"
-                        >
-                            info
-                        </NavLink>
-                        &nbsp;&nbsp;
-                        <NavLink
-                            className="link-menu"
-                            activeClassName="active"
-                            to="/admin"
-                        >
-                            data
-                        </NavLink>
-                        &nbsp; 🦠 &nbsp;
-                        <span className="instructions">
-                            how do you feel about the COVID-19 crisis? let it
-                            all out!
-                        </span>
-                    </nav>
+                            CORONA EMOTIONS CLUB &nbsp;&nbsp; CORONA EMOTIONS
+                            CLUB &nbsp;&nbsp; CORONA EMOTIONS CLUB &nbsp;&nbsp;
+                            CORONA EMOTIONS CLUB &nbsp;&nbsp;CORONA EMOTIONS
+                            CLUB &nbsp;&nbsp; CORONA EMOTIONS CLUB
+                            &nbsp;&nbsp;CORONA EMOTIONS CLUB
+                            &nbsp;&nbsp;&nbsp;&nbsp; CORONA EMOTIONS CLUB
+                            &nbsp;&nbsp;CORONA EMOTIONS CLUB &nbsp;&nbsp;
+                        </h1>
+                    )}
+                </Ticker>
 
-                    <Route path="/submit" component={Submit}></Route>
+                <nav>
+                    <NavLink
+                        className="link-menu"
+                        activeClassName="active"
+                        to="/submit"
+                    >
+                        submit
+                    </NavLink>
+                    &nbsp;&nbsp;
+                    <NavLink
+                        className="link-menu"
+                        activeClassName="active"
+                        to="/browse"
+                    >
+                        browse
+                    </NavLink>
+                    &nbsp;&nbsp;
+                    <NavLink
+                        className="link-menu"
+                        activeClassName="active"
+                        to="/info"
+                    >
+                        info
+                    </NavLink>
+                    &nbsp;&nbsp;
+                    <NavLink
+                        className="link-menu"
+                        activeClassName="active"
+                        to="/admin"
+                    >
+                        data
+                    </NavLink>
+                    &nbsp; 🦠 &nbsp;
+                    <span className="instructions">
+                        how do you feel about the COVID-19 crisis? let it all
+                        out!
+                    </span>
+                </nav>
 
-                    <Route path="/browse" component={Browse}></Route>
+                <Route path="/submit" component={Submit}></Route>
 
-                    <Route path="/info" component={Info}></Route>
+                <Route path="/browse" component={Browse}></Route>
 
-                    <Route path="/admin" component={Admin}></Route>
-                </BrowserRouter>
+                <Route path="/info" component={Info}></Route>
+
+                <Route path="/admin" component={Admin}></Route>
             </>
         );
     }
