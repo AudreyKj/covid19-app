@@ -185,33 +185,31 @@ function Admin() {
 
     return (
         <>
-            <div>
-                <h3> DATA VISUALIZATION OF THE SUBMISSIONS </h3>
-                {error && (
-                    <h4 className="dataError">
-                        ERROR: something went wrong in fetching the data. <br />
-                        please come back later
-                    </h4>
-                )}
-                {chartReady && (
-                    <div className="data-container">
-                        <div className="single-chart">
-                            <Line data={monthData} />
-                        </div>
-                        <div className="single-chart bottom">
-                            <span className="data">
-                                Countries where the submissions come from
-                            </span>
-                            <Pie
-                                data={country}
-                                width={200}
-                                height={200}
-                                options={{ maintainAspectRatio: false }}
-                            />
-                        </div>
+            <h3> DATA VISUALIZATION OF THE SUBMISSIONS </h3>
+            {error && (
+                <h4 className="dataError">
+                    ERROR: something went wrong in fetching the data. <br />
+                    please come back later
+                </h4>
+            )}
+            {chartReady && (
+                <div className="data-container">
+                    <div className="single-chart">
+                        <Line data={monthData} />
                     </div>
-                )}
-            </div>
+                    <div className="single-chart bottom">
+                        <span className="data">
+                            Countries where the submissions come from
+                        </span>
+                        <Pie
+                            data={country}
+                            width={200}
+                            height={200}
+                            options={{ maintainAspectRatio: false }}
+                        />
+                    </div>
+                </div>
+            )}
         </>
     );
 }
