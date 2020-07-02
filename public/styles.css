@@ -579,3 +579,9 @@ span.data {
     font-size: 1rem;
     margin: 0;
 }
+
+@media (max-width: 900px) {
+    span.data {
+        font-size: 0.8rem;
+    }
+}
