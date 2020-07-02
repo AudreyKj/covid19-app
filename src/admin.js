@@ -201,12 +201,7 @@ function Admin() {
                         <span className="data">
                             Countries where the submissions come from
                         </span>
-                        <Pie
-                            data={country}
-                            width={200}
-                            height={200}
-                            options={{ maintainAspectRatio: false }}
-                        />
+                        <Pie data={country} width={150} height={100} />
                     </div>
                 </div>
             )}
