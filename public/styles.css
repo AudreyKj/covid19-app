@@ -519,6 +519,7 @@ p.info_text {
 }
 
 /* DATA VISUALIZATION DASHBOARDS */
+
 h3 {
     width: 100%;
     text-align: center;
@@ -535,20 +536,21 @@ h3 {
 }
 
 div.data-container {
-    display: flex;
+    padding-top: 60px;
 
-    align-items: center;
-    justify-content: center;
     width: 100%;
     min-height: 100%;
-    margin-top: 10px;
-    overflow: scroll;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 @media (max-width: 900px) {
     div.data-container {
         flex-direction: column;
         margin-top: 0;
+        padding-top: 0;
     }
 }
 

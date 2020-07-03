@@ -186,6 +186,7 @@ function Admin() {
     return (
         <>
             <h3> DATA VISUALIZATION OF THE SUBMISSIONS </h3>
+
             {error && (
                 <h4 className="dataError">
                     ERROR: something went wrong in fetching the data. <br />
