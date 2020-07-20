@@ -2,8 +2,7 @@
 
 In this React app, users share their personal experiences of the COVID-19 outbreak and browse through others' submissions. An "admin" page (made with chart.js) visualizes the data of the submissions by date and location. <br />
 
-This project's intention is to collect personal, emotional, yet global, perspectives on the situation.
-When all this is over, I hope that it could serve as a digital archive reminding us of this very strange time.
+This project's intention is to collect personal, yet global, perspectives on the situation.
 
 [visit live app](https://corona-emotions.club)
 
