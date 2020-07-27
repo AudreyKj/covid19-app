@@ -2,7 +2,6 @@ import React from "react";
 import GoogleFontLoader from "react-google-font-loader";
 import Ticker from "react-ticker";
 import { BrowserRouter, Route, NavLink } from "react-router-dom";
-import axios from "./axios";
 import Submit from "./submit";
 import Browse from "./browse";
 import Info from "./info";
