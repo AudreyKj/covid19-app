@@ -14,15 +14,6 @@ export default class App extends React.Component {
         super(props);
     }
 
-    componentDidMount() {
-        const cursor = document.querySelector("div.cursor");
-
-        document.addEventListener("mousemove", function(e) {
-            cursor.style.top = e.clientY - 10 + "px";
-            cursor.style.left = e.clientX - 10 + "px";
-        });
-    }
-
     render() {
         return (
             <>
@@ -31,7 +22,7 @@ export default class App extends React.Component {
                     <meta name="description" content="COVID-19" />
                     <meta
                         name="keywords"
-                        content="COVID-19, corona virus, pandemie"
+                        content="COVID-19, corona virus, pandemic, emotions"
                     />
                     <meta
                         name="application-name"
@@ -60,9 +51,6 @@ export default class App extends React.Component {
                         }
                     ]}
                 />
-
-                <div className="gradient"></div>
-                <div className="cursor"></div>
 
                 <Ticker speed={4}>
                     {({ index }) => (

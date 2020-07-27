@@ -24,14 +24,7 @@ $font: Arial, Helvetica, sans-serif;
 }
 
 html {
-    cursor: none;
     -webkit-text-size-adjust: 100%;
-}
-
-@media only screen and (max-width: 850px) {
-    html {
-        cursor: auto;
-    }
 }
 
 body {
@@ -46,24 +39,6 @@ body {
 
     margin: 0;
     padding: 0;
-}
-
-div.cursor {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    box-shadow: white 0px 0px 3px 3px;
-
-    position: absolute;
-    z-index: 100;
-
-    pointer-events: none;
-}
-
-@media only screen and (max-width: 850px) {
-    div.cursor {
-        display: none;
-    }
 }
 
 span.instructions {
@@ -156,7 +131,6 @@ nav {
 }
 
 a {
-    cursor: none;
     color: #444;
 }
 
