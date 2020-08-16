@@ -22,7 +22,6 @@ This project's intention is to collect personal, yet global, perspectives on the
 ## Visuals
 
 ![screenshot](readMe/screenshot_1.png)
-![screenshot](readMe/screenshot_2.png)
 ![screenshot](readMe/screenshot_3.png)
 
 <p align="center">
