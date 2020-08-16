@@ -1,8 +1,8 @@
-# CORONA EMOTIONS CLUB - React app about COVID-19
+# React app about COVID-19 with data visualization 
 
-In this React app, users share their personal experiences of the COVID-19 outbreak and browse through others' submissions. <br /><br/>
+In this React app, users share their personal experiences of the COVID-19 outbreak and browse through others' submissions. <br />
 
-An "admin" page (made with chart.js) visualizes the data of the submissions by date and location.  <br /><br/>
+An "admin" page (made with chart.js) visualizes the data of the submissions by date and location.  <br />
 
 Fully responsive app. The main features have been tested with Jest and React Testing Library.
 
