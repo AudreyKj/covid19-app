@@ -260,9 +260,9 @@ button {
     background-color: white;
     border-radius: 2px;
     font-size: 2rem;
-    cursor: none;
     border: none;
     outline: none;
+    cursor: pointer;
 }
 
 @media only screen and (max-width: 815px) {
@@ -433,6 +433,7 @@ div.next {
     -ms-user-select: none;
     user-select: none;
     opacity: 0.9;
+    cursor: pointer;
 }
 
 @media only screen and (max-height: 560px) and (max-width: 500px) {
