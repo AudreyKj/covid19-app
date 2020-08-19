@@ -12,8 +12,11 @@ export default function App() {
     return (
         <>
             <Helmet>
-                <title>Corona Emotions Club</title>
-                <meta name="description" content="COVID-19" />
+                <title>corona emotions club</title>
+                <meta
+                    name="description"
+                    content="app where users express their feelings about the COVID-19 outbreak"
+                />
                 <meta
                     name="keywords"
                     content="COVID-19, corona virus, pandemic, emotions"
@@ -28,7 +31,7 @@ export default function App() {
                 />
                 <meta
                     property="og:description"
-                    content="corona emotions club"
+                    content="app where users express their feelings about the COVID-19 outbreak"
                 />
                 <meta property="og:image" content="preview.jpg" />
                 <meta property="og:image:url" content="preview.jpg" />

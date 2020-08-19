@@ -60,26 +60,30 @@ export default function Submit() {
             </MetaTags>
 
             <form className="submit">
-                <textarea
-                    className="emotion"
-                    type="text"
-                    name="emotion"
-                    autoComplete="off"
-                    placeholder="write here ----> all your fears, hopes, dreams about COVID-19!"
-                    onChange={handleChange}
-                    maxLength="290"
-                    required
-                />
+                <label>
+                    <textarea
+                        className="emotion"
+                        type="text"
+                        name="emotion"
+                        autoComplete="off"
+                        placeholder="write here ----> all your fears, hopes, dreams about COVID-19!"
+                        onChange={handleChange}
+                        maxLength="290"
+                        required
+                    />
+                </label>
 
-                <input
-                    className="country"
-                    type="text"
-                    name="country"
-                    autoComplete="off"
-                    placeholder="in which country are you right now?"
-                    onChange={handleChange}
-                    required
-                />
+                <label>
+                    <input
+                        className="country"
+                        type="text"
+                        name="country"
+                        autoComplete="off"
+                        placeholder="in which country are you right now?"
+                        onChange={handleChange}
+                        required
+                    />
+                </label>
                 <button onClick={submit}> {buttonText} </button>
             </form>
             {error && (

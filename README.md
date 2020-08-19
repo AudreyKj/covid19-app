@@ -2,7 +2,7 @@
 
 In this React app, users share their personal experiences of the COVID-19 outbreak and browse through others' submissions. <br />
 
-An "admin" page (made with chart.js) visualizes the data of the submissions by date and location. <br />
+A "data" page (made with chart.js) visualizes the submissions' data by date and location. <br />
 
 Fully responsive app. The main features have been tested with Jest and React Testing Library.
 
