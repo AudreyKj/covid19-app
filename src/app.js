@@ -90,14 +90,6 @@ export default function App() {
                 >
                     info
                 </NavLink>
-                &nbsp;&nbsp;
-                <NavLink
-                    className="link-menu"
-                    activeClassName="active"
-                    to="/admin"
-                >
-                    data
-                </NavLink>
                 &nbsp; 🦠 &nbsp;
                 <span className="instructions">
                     how do you feel about the COVID-19 crisis? let it all out!
